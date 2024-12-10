@@ -165,6 +165,7 @@ img
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   color: #6666;
   font-size: 28px;
   font-weight: bold;
