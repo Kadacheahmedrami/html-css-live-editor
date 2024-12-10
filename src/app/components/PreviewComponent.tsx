@@ -61,7 +61,7 @@ const PreviewComponent = ({ initialHtml = "", initialCss = "" }: { initialHtml: 
         }}
       >
         <div
-          className="bg-white rounded-lg p-6 shadow-lg transition-transform"
+          className="bg-white border-2  rounded-lg p-6 shadow-lg transition-transform"
           style={{
             ...rotationStyle, // Apply rotation, scale, and shadow
             transformStyle: "preserve-3d", // Ensure child elements keep their depth
@@ -69,7 +69,7 @@ const PreviewComponent = ({ initialHtml = "", initialCss = "" }: { initialHtml: 
           }}
         >
           {/* Editor Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 z-20 relative">
+          <div className="grid  grid-cols-1 md:grid-cols-2 gap-4 z-20 relative">
             {/* HTML Editor */}
             <div className="relative z-20">
               <h3 className="text-lg font-semibold text-gray-700 mb-2">HTML</h3>
@@ -77,7 +77,7 @@ const PreviewComponent = ({ initialHtml = "", initialCss = "" }: { initialHtml: 
                 placeholder="Write HTML here..."
                 value={html}
                 onChange={(e) => setHtml(e.target.value)}
-                className="w-full h-40 border border-gray-300 rounded-md p-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full h-40 border-2  border-gray-400 rounded-md p-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
 
@@ -88,7 +88,7 @@ const PreviewComponent = ({ initialHtml = "", initialCss = "" }: { initialHtml: 
                 placeholder="Write CSS here..."
                 value={css}
                 onChange={(e) => setCss(e.target.value)}
-                className="w-full h-40 border border-gray-300 rounded-md p-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full h-40 border-2  border-gray-400 rounded-md p-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
           </div>
@@ -99,7 +99,7 @@ const PreviewComponent = ({ initialHtml = "", initialCss = "" }: { initialHtml: 
             <iframe
               srcDoc={getIframeContent()}
               title="Output"
-              className="w-full h-72 border border-gray-300 rounded-md"
+              className="w-full h-72 border border-gray-400 rounded-md"
               style={{
                 pointerEvents: "auto", // Ensure iframe can interact with the user
                 zIndex: 20, // Set a high z-index for iframe to be clickable above 3D effects

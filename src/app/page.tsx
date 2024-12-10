@@ -1,4 +1,3 @@
-'use client';
 
 import PreviewComponent from './components/PreviewComponent';
 import NavBar from './components/NavBar';
@@ -212,7 +211,7 @@ const Home = () => {
         <p className="mt-2 text-gray-600">The <code>:not()</code> pseudo-class applies styles to elements that do not match the specified selector (e.g., all paragraphs except the first).</p>
       </div>
  {/* Transform Example */}
- <div className="w-full text-center relative z-10">
+ <div id="Transform" className="w-full text-center relative z-10">
         <h2 className="text-2xl font-semibold mb-4">Transform Example</h2>
         <PreviewComponent
           initialHtml="<div class='box'>Hover Me</div>"
@@ -242,7 +241,7 @@ const Home = () => {
       </div>
 
        {/* Example 7: Transition Example */}
-       <div className="w-full text-center relative z-10">
+       <div id="Transition" className="w-full text-center relative z-10">
         <h2 className={`text-[60px] ${minecrafterAlt.className}  font-semibold mb-4`}>Transition Effect Example</h2>
         <PreviewComponent
           initialHtml="<div class='transition-box'>Hover to change size</div>"
@@ -303,7 +302,7 @@ const Home = () => {
       </div>
 
       {/* Example 10: Z-Index Effect Example */}
-      <div className="w-full text-center relative z-10">
+      <div id="Zindex" className="w-full text-center relative z-10">
         <h2 className={`text-[60px] ${minecrafterAlt.className}  font-semibold mb-4`}>Z-Index Example</h2>
         <PreviewComponent
           initialHtml="<div class='box one'>Box 1</div><div class='box two'>Box 2</div>"
@@ -335,7 +334,7 @@ const Home = () => {
       </div>
 
       {/* Example 11: Animation Example */}
-      <div className="w-full text-center relative z-10">
+      <div id="Animation" className="w-full text-center relative z-10">
         <h2 className={`text-[60px] ${minecrafterAlt.className}  font-semibold mb-4`}>Animation Effect Example</h2>
         <PreviewComponent
           initialHtml="<div class='animated-box'>Animate me</div>"
